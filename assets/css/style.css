@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: turquoise;
+  --border-color: #abd8eb;
+  --header-color: rgb(174, 162, 240);
+}
+
+/*Header*/
+header {
+  padding: 20px 35px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: var(--header-color);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--header-color);
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 40px;
+  color: var(--header-color);
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.about-me {
+  display: flex;
+}
+.about-me p {
+  float: right;
+  text-align: left;
+}
+
+.avatar img {
+  width: 10%;
+  float: right;
+}
+
+.run-buddy img {
+  width: 45%;
+  border: 10px solid var(--border-color);
+  border-radius: 15px;
+}
+
+.horiseo img {
+  width: 30%;
+  border: 10px solid var(--border-color);
+}
+
+.my-work a {
+  font-size: 30px;
+  background-color: var(--border-color);
+}
+
+/*Contact Me*/
+.contact-me {
+  padding: 10px;
+  background-color: var(--primary-color);
+}

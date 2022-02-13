@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="my-work">My Work</a>
+                    <a href="#my-work">My Work</a>
                 </li>
                 <li>
-                    <a href="contact-me">Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
             </ul>
         </nav>
@@ -27,29 +28,53 @@
     <!--End Navigation-->
 
     <!--About Me-->
-    <section class="about-me">
-        <h2>About Me</h2>
+    <section id="about-me" class="about-me">
+        <h2 class="section-title">About Me</h2>
+        <div class="avatar">
+            <img src="./assets/images/Avatar" alt="" />
+        </div>
         <p>
-
+            My name is Marisa Behrend. Currently I am enrolled in a coding bootcamp from the University of Oregon.
+            I got interested in coding from seeing a video pop up on my youtube for you page. After watching it I started
+            looking into how I could self teach myself. I found this was not a good way to learn for me, so I looked for a 
+            more structured course.
         </p>
     </section>
     <!--About Me End-->
 
     <!--My Work-->
-    <section class="my-work">
+    <section id="my-work" class="my-work">
         <h2>My Work</h2>
-        <p>
-
-        </p>
+        <ul>
+            <li>
+                <div class="run-buddy">
+                <a href="https://risbehrend.github.io/Run-Buddy/">
+                    <img src="./assets/images/run-buddy.png" alt="" />
+                </a>
+                </div>
+            </li>
+            <li>
+                <div class="horiseo">
+                <a href="https://risbehrend.github.io/HTMLModule/">
+                    <img src="./assets/images/Horiseo.png" alt="" />
+                </a>
+                </div>
+            </li>
+        </ul>
     </section>
     <!--My Work End-->
 
     <!--Contact Me-->
-    <section class="contact-me">
+    <section id="contact-me" class="contact-me">
         <h2>Contact Me</h2>
-        <p>
-            
-        </p>
+        <ul>
+            <li>
+                <a href="ris.behrend@gmail.com">Email</a>
+            </li>
+            <li>
+                <a href="https://github.com/RisBehrend">GitHub</a>
+            </li>
+        </ul>
     </section>
 </body>
 </html>
