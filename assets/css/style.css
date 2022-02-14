@@ -23,21 +23,21 @@ header h1 {
   color: var(--header-color);
 }
 
-header a {
+a {
   text-decoration: none;
   color: var(--header-color);
 }
 
-header nav ul li a {
+ul li a {
   padding: 10px 15px;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 1.55vw;
   flex-wrap: wrap;
 }
 
 h2 {
-  font-size: 40px;
-  color: var(--header-color);
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
 }
 
 header nav ul {
@@ -49,22 +49,28 @@ header nav ul {
 }
 
 .about-me {
-  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
-.about-me p {
-  float: right;
-  text-align: left;
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -5px;
+  width: 30%;
 }
 
 .avatar img {
-  width: 10%;
-  float: right;
+  width: 20%;
 }
 
 .run-buddy img {
   width: 45%;
   border: 10px solid var(--border-color);
   border-radius: 15px;
+  padding: 10px;
 }
 
 .horiseo img {
@@ -72,13 +78,70 @@ header nav ul {
   border: 10px solid var(--border-color);
 }
 
-.my-work a {
-  font-size: 30px;
-  background-color: var(--border-color);
+.section-title {
+  font-size: 48px;
+  color: var(--header-color);
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 20px;
+}
+
+section {
+  padding: 10px;
 }
 
 /*Contact Me*/
 .contact-me {
-  padding: 10px;
+  padding: 10px 10px;
   background-color: var(--primary-color);
 }
+
+.contact-me ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+      
+      header h1 {
+        width: 100%;
+        text-align: center;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    
+      footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      section {
+        padding: 30px 15px;
+      }
+    }
+    
+    @media screen and (max-width: 575px) {
+
+      .section-title {
+        width: 95%;
+
+    }
